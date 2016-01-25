@@ -12,17 +12,13 @@ using System.Windows.Forms;
  * In Class Exercise Two
  * Author: Cody Miller
  * Project Purpose: Hilarious program to generate equally hilarious jokes.
- * Input:  This program does not accept inputs
+ * Input:  Button click inputs handled by local methods
  * Desired Output:  The label on the form should show the joke and a message box should pop up with the punchline
- * Variables and Classes: strings for all the jokes and punchlines because I don't know how to do arrays yet =(,
- *          joke counter to keep track of what order to do the jokes in,
- *          maxJokes allows easier expansion of adding more joke. Simply add the strings for the joke and punchline
- *          and increment the number by one.
+ * Variables and Classes: string arrays for the jokes and punchlines allow easy expansion,
+ *          joke counter to keep track of which joke number is current
  * Formulas: N/A
- * Description of the main algorithm: The label is filled with the text based on a switch statement and the
- *          message box is filled based on the same counter. The counter, when reaching the end of the list of jokes
- *          (currently hardcoded) is reset to the starting point so the program loops until the user exits manually.
-
+ * Description of the main algorithm: The label is populated based on a counter and getting the array index at the counter
+ *          position
  * Testing:  Clicking the buttons should cause the desired output to occur. The jokes should make logical sense
  *          (meaning joke1 does not make sense with punchline 3).
  * 
@@ -33,61 +29,43 @@ namespace InClassExerciseTwo
 {
     public partial class formJokeGenerator : Form
     {
-        //Jokes are held in strings to allow easier expansion
-        string joke1 = "How many programmers does it take to screw in a lightbulb?";
-        string joke2 = "Why do programmers always mix up Halloween and Christmas?";
-        string joke3 = "What's the difference between an enterprise software salesperson and a used car dealer?";
+        //Easily expandable array of jokes, simply add new line
+        string[] jokes = 
+        {
+            "How many programmers does it take to screw in a lightbulb?",
+            "Why do programmers always mix up Halloween and Christmas?",
+            "What's the difference between an enterprise software salesperson and a used car dealer?"
+        };
 
-        //Punchlines also held in strings to allow easier expansion
-        string punchline1 = "None. That's a hardware problem.";
-        string punchline2 = "Because Oct 31 == Dec 25";
-        string punchline3 = "The used car dealer knows when he's lying.";
+        //Equally easily expandable array of punchlines. Should correspond to the index of the joke
+        string[] punchlines = 
+        {
+            "None. That's a hardware problem.",
+            "Because Oct 31 == Dec 25",
+            "The used car dealer knows when he's lying."
+        };
 
         int jokeCounter = 0; //Joke Counter to keep track of current joke number
-        int maxJokes = 3; //Max number of jokes in the list to allow easy expansion
 
         public formJokeGenerator()
         {
             InitializeComponent();
         }
 
-        //Sets up the joke based on jokeCounter (modified + 1)
+        //Sets up the joke based on joke counter
         private void btnSetup_Click(object sender, EventArgs e)
         {
-            lblJoke.Text = string.Empty; //Defaults the label to empty for safety
-            if(jokeCounter == maxJokes)
-            {
-                jokeCounter = 0;
-            }
-            switch(jokeCounter + 1) //Probably ineffecient to add 1 and switch that. Might be better to change the cases.
-            {
-                case 1:
-                    lblJoke.Text = joke1;
-                    break;
-                case 2:
-                    lblJoke.Text = joke2;
-                    break;
-                case 3:
-                    lblJoke.Text = joke3;
-                    break;
-            }
-            jokeCounter++;
+            lblJoke.Text = jokes[jokeCounter];
         }
         
-        //Simple enough, uses a switch on the unmodified jokeCounter number.
+        //Shows a message box with the punchline corresponding to the joke counter then clears counter if at max index
         private void btnPunchline_Click(object sender, EventArgs e)
         {
-            switch (jokeCounter)
+            MessageBox.Show(punchlines[jokeCounter]);
+            jokeCounter++;
+            if (jokeCounter == jokes.Length)
             {
-                case 1:
-                    MessageBox.Show(punchline1);
-                    break;
-                case 2:
-                    MessageBox.Show(punchline2);
-                    break;
-                case 3:
-                    MessageBox.Show(punchline3);
-                    break;
+                jokeCounter = 0;
             }
         }
 

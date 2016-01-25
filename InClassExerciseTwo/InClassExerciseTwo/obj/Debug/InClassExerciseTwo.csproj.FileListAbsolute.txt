@@ -6,3 +6,4 @@ C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExe
 C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExerciseTwo\obj\Debug\InClassExerciseTwo.exe
 C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExerciseTwo\obj\Debug\InClassExerciseTwo.pdb
 C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExerciseTwo\obj\Debug\InClassExerciseTwo.formJokeGenerator.resources
+C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExerciseTwo\obj\Debug\InClassExerciseTwo.csprojResolveAssemblyReference.cache
