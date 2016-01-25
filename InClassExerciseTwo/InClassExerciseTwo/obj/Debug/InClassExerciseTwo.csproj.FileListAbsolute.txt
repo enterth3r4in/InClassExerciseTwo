@@ -1,0 +1,8 @@
+C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExerciseTwo\bin\Debug\InClassExerciseTwo.exe.config
+C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExerciseTwo\bin\Debug\InClassExerciseTwo.exe
+C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExerciseTwo\bin\Debug\InClassExerciseTwo.pdb
+C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExerciseTwo\obj\Debug\InClassExerciseTwo.Properties.Resources.resources
+C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExerciseTwo\obj\Debug\InClassExerciseTwo.csproj.GenerateResource.Cache
+C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExerciseTwo\obj\Debug\InClassExerciseTwo.exe
+C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExerciseTwo\obj\Debug\InClassExerciseTwo.pdb
+C:\Users\as600\Documents\GitHub\InClassExerciseTwo\InClassExerciseTwo\InClassExerciseTwo\obj\Debug\InClassExerciseTwo.formJokeGenerator.resources
