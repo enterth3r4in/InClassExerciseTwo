@@ -8,6 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * In Class Exercise Two
+ * Author: Cody Miller
+ * Project Purpose: Hilarious program to generate equally hilarious jokes.
+ * Input:  This program does not accept inputs
+ * Desired Output:  The label on the form should show the joke and a message box should pop up with the punchline
+ * Variables and Classes: strings for all the jokes and punchlines because I don't know how to do arrays yet =(,
+ *          joke counter to keep track of what order to do the jokes in
+ * Formulas: N/A
+ * Description of the main algorithm: The label is filled with the text based on a switch statement and the
+ *          message box is filled based on the same counter. The counter, when reaching the end of the list of jokes
+ *          (currently hardcoded) is reset to the starting point so the program loops until the user exits manually.
+
+ * Testing:  Clicking the buttons should cause the desired output to occur. The jokes should make logical sense
+ *          (meaning joke1 does not make sense with punchline 3).
+ * 
+ * January 25, 2016
+ */
+
 namespace InClassExerciseTwo
 {
     public partial class formJokeGenerator : Form
